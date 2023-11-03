@@ -50,8 +50,8 @@ body {
   transition: 0.25s;
 }
 .links span:hover {
-    background: #5e606016;
-    color: #202020;
+  background: #5e606016;
+  color: #202020;
 }
 .login {
   width: 20%;
@@ -68,9 +68,9 @@ body {
   transition: 0.25s;
 }
 .login button:hover {
-    color: black;
-    background: transparent;
-    border: 1px solid black;
+  color: black;
+  background: transparent;
+  border: 1px solid black;
 }
 .see-more-wrapper {
   width: 100%;
@@ -80,7 +80,7 @@ body {
   align-items: center;
 }
 .see-more-wrapper button {
-  width: 120px;
+  width: 240px;
   height: 44px;
   background-color: #e54724;
   color: white;
@@ -108,7 +108,6 @@ body {
   font-weight: 600;
   font-size: 60px;
   letter-spacing: 2px;
-  word-spacing: 10px;
 }
 .canvas {
   position: relative;
@@ -247,9 +246,13 @@ body {
 }
 .size-bath {
   width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .size-bath select {
-  width: 50%;
+  width: 48%;
   padding: 4px;
   font-size: 16px;
   padding: 7.5px;
@@ -274,4 +277,11 @@ body {
   background: blueviolet;
   font-size: 16px;
   border: none;
+}
+.form-heading-wrapper {
+  width: 75%;
+}
+.form-heading {
+  font-size: 24px;
+  font-weight: 600;
 }
