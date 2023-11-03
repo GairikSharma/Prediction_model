@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></script>
   </head>
   <body>
@@ -49,13 +52,51 @@
       </div>
 
       <div class="modal-wrapper" id="modal-wrapper">
-        <i
+        <!-- <i
           class="fa fa-close"
           id="close"
           style="font-size: 48px; color: white"
-        ></i>
+        ></i> -->
         <div class="modal-content">
-          <div class="form-wrapper">Form will contain here</div>
+          <div class="form-wrapper">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter location..."
+            />
+
+            <select name="cars" class="select-form" id="cars" form="carform">
+              <option value="volvo">Select</option>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+
+            <div class="size-bath">
+              <select name="cars" id="cars" form="carform">
+                <option value="volvo">Select</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+
+              <select name="cars" id="cars" form="carform">
+                <option value="volvo">Select</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+
+            <input type="date" class="form-control" />
+            <input type="number" class="form-control" />
+            <div class="button-wrapper">
+              <button class="check-price">Predict Price</button>
+            </div>
+          </div>
           <div class="card-wrapper">Card will contain here</div>
         </div>
       </div>
