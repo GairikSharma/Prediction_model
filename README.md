@@ -20,7 +20,7 @@ This repository contains a machine-learning model designed to predict real estat
 The dataset used for training and testing the model is included in the 'data' folder. It contains information on various properties, including features like location, square footage, number of bedrooms, and the actual sale prices.
 
 ## Contributors
-I. [Rituraj Paul](https://www.github.com/laughing-nerd) 
+I. [Bhupendra Yogi](https://www.github.com/laughing-nerd) 
 <br>
 II. [Sampriti Banerjee](https://www.github.com/sampritibanerjee)
 <br>
