@@ -1,105 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Property Prediction</title>
     <link rel="stylesheet" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
     <div class="App">
-      <!-- navbar wrapper  -->
-      <div class="navbar-wrapper">
-        <!-- logo  -->
-        <div class="logo">Estate<span>.</span></div>
-        <!-- links  -->
-        <div class="links">
-          <span>Home</span>
-          <span>Property</span>
-          <span>Discover</span>
-          <span>Create</span>
+        <!-- navbar wrapper  -->
+        <div class="navbar-wrapper">
+            <!-- logo  -->
+            <div class="logo">Estate<span>.</span></div>
+            <!-- links  -->
+            <div class="links">
+                <span>Home</span>
+                <span>Property</span>
+                <span>Discover</span>
+                <span>Create</span>
+            </div>
+            <!-- login  -->
+            <div class="login">
+                <button>Login</button>
+            </div>
         </div>
-        <!-- login  -->
-        <div class="login">
-          <button>Login</button>
+
+        <!-- header  -->
+        <div class="header-wrapper">
+            <div class="title">Modern Style and High Quality</div>
+            <div class="see-more-wrapper">
+                <button id="seeMore">Predict Price of any Property</button>
+            </div>
+            <div class="canvas">
+                <div class="canvas-bottom">
+                    <div class="div1">
+                        <img src="./assets/img1.png" alt="property-image" />
+                    </div>
+                    <div class="div2">
+                        <img src="./assets/img1.png" alt="property-image" />
+                    </div>
+                    <div class="div3">
+                        <img src="./assets/img1.png" alt="property-image" />
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- header  -->
-      <div class="header-wrapper">
-        <div class="title">Modern Style and High Quality</div>
-        <div class="see-more-wrapper">
-          <button id="seeMore">Predict Price of any Property</button>
+        <div class="modal-wrapper" id="modal-wrapper">
+            <div class="modal-content" id="modal-content">
+                <div class="form-wrapper">
+                    <div class="form-heading-wrapper">
+                        <div class="form-heading-main">Enter Your Requirments</div>
+                    </div>
+                    <form class="form">
+                        <h2 class="form-heading">Area (Square Feet)</h2>
+                        <input class="area" type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+                        <h2 class="form-heading">BHK</h2>
+                        <div class="switch-field">
+                            <input type="radio" id="radio-bhk-1" name="uiBHK" value="1" />
+                            <label for="radio-bhk-1">1</label>
+                            <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+                            <label for="radio-bhk-2">2</label>
+                            <input type="radio" id="radio-bhk-3" name="uiBHK" value="3" />
+                            <label for="radio-bhk-3">3</label>
+                            <input type="radio" id="radio-bhk-4" name="uiBHK" value="4" />
+                            <label for="radio-bhk-4">4</label>
+                            <input type="radio" id="radio-bhk-5" name="uiBHK" value="5" />
+                            <label for="radio-bhk-5">5</label>
+                        </div>
+                        <h2 class="form-heading">Bath</h2>
+                        <div class="switch-field">
+                            <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1" />
+                            <label for="radio-bath-1">1</label>
+                            <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+                            <label for="radio-bath-2">2</label>
+                            <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3" />
+                            <label for="radio-bath-3">3</label>
+                            <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4" />
+                            <label for="radio-bath-4">4</label>
+                            <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5" />
+                            <label for="radio-bath-5">5</label>
+                        </div>
+                        <h2 class="form-heading">Location</h2>
+                        <div>
+                            <select class="location" name="" id="uiLocations">
+                        <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                            <option>Electronic City</option>
+                            <option>Rajaji Nagar</option>
+                      </select>
+                        </div>
+                        <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+                        <div id="uiEstimatedPrice" class="result">
+                            <h2></h2>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="canvas">
-          <div class="canvas-bottom">
-            <div class="div1">
-              <img src="./assets/img1.png" alt="property-image" />
-            </div>
-            <div class="div2">
-              <img src="./assets/img1.png" alt="property-image" />
-            </div>
-            <div class="div3">
-              <img src="./assets/img1.png" alt="property-image" />
-            </div>
-          </div>
-        </div>
-      </div>
+</body>
+<script src="index.js"></script>
 
-      <div class="modal-wrapper" id="modal-wrapper">
-        <div class="modal-content" id="modal-content">
-          <div class="form-wrapper">
-            <div class="form-heading-wrapper">
-              <div class="form-heading">Enter Your Requirments</div>
-            </div>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter location..."
-            />
 
-            <select name="cars" class="select-form" id="cars" form="carform">
-              <option value="volvo">Select</option>
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="opel">Opel</option>
-              <option value="audi">Audi</option>
-            </select>
-
-            <div class="size-bath">
-              <select name="cars" id="cars" form="carform">
-                <option value="volvo">Select</option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-
-              <select name="cars" id="cars" form="carform">
-                <option value="volvo">Select</option>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-              </select>
-            </div>
-
-            <input type="date" placeholder="Enter date" class="form-control" />
-            <input type="number" class="form-control" />
-            <div class="button-wrapper">
-              <button class="check-price">Predict Price</button>
-            </div>
-          </div>
-          <div class="card-wrapper">
-            Card
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-  <script src="index.js"></script>
 </html>
