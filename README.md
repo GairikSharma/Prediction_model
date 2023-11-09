@@ -1,5 +1,6 @@
 <h1>Real Estate Price Prediction Model</h1>
   <img src="pred_1.jpeg" alt="Logo">
+   <img src="pred_2.jpeg" alt="Logo">
 <h3>Overview</h3>
 <br>
 This repository contains a machine-learning model designed to predict real estate prices. The model is built using various data science and machine learning techniques to provide accurate and valuable predictions for real estate prices. This project is aimed at assisting individuals, real estate agents, and investors in making informed decisions about property investments.
