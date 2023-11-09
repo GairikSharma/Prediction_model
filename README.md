@@ -1,8 +1,4 @@
-<h1>Real Estate Price Prediction Model</h1>
-  <img src="pred_2.jpeg" alt="Logo">
-  <img src="pred_1.jpeg" alt="Logo">
-  
- 
+<h1>Real Estate Price Prediction Model</h1> 
 <h3>Overview</h3>
 <br>
 This repository contains a machine-learning model designed to predict real estate prices. The model is built using various data science and machine learning techniques to provide accurate and valuable predictions for real estate prices. This project is aimed at assisting individuals, real estate agents, and investors in making informed decisions about property investments.
@@ -22,6 +18,9 @@ This repository contains a machine-learning model designed to predict real estat
 <br>
 The dataset used for training and testing the model is included in the 'model' folder. It contains information on various properties, including features like location, square footage, number of bedrooms, and the actual sale prices.
 
+# preview
+![image](https://github.com/GairikSharma/Prediction_model/blob/main/pred_1.jpeg)
+![image](https://github.com/GairikSharma/Prediction_model/blob/main/pred_2.jpeg)
 ## Contributors
 I. [Bhupendra Yogi](https://www.github.com/laughing-nerd) 
 <br>
