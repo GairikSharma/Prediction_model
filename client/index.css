@@ -23,8 +23,9 @@ body {
     height: 10%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 7%;
 }
 
 .logo {
@@ -62,27 +63,34 @@ body {
     color: #202020;
 }
 
-.login {
-    width: 20%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+.github svg g{
+  fill: white;
 }
-
-.login button {
-    width: 80px;
-    height: 34px;
+.github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    cursor: pointer;
+    width: 110px;
+    height: 40px;
     border-radius: 20px;
     background-color: #202020;
     color: white;
-    transition: 0.25s;
+    transition: 0.15s;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
-.login button:hover {
+.github:hover {
     color: black;
     background: transparent;
     border: 1px solid black;
 }
+.github:hover svg>g{
+  fill: black;
+}
+;
 
 .see-more-wrapper {
     width: 100%;
@@ -137,7 +145,7 @@ body {
 .canvas {
     position: relative;
     width: 100%;
-    height: 70%;
+    height: 100%;
     background: transparent;
 }
 
@@ -252,101 +260,6 @@ body {
     gap: 15px;
 }
 
-
-/* 
-.card-wrapper {
-  width: 40%;
-  height: 80%;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.size-bath {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-control {
-  width: 75%;
-  padding: 4px;
-  font-size: 16px;
-  padding: 7.5px;
-  border-radius: 5px;
-  border: rgba(74, 72, 77, 0.483) solid 2px;
-}
-
-.form-control:focus {
-  outline: none;
-  border: blueviolet solid 2px;
-}
-
-.select-form {
-  width: 75%;
-  padding: 4px;
-  font-size: 16px;
-  padding: 7.5px;
-  border-radius: 5px;
-}
-
-.select-form:focus {
-  outline: none;
-  border: blueviolet solid 2px;
-}
-
-.size-bath {
-  width: 75%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.size-bath select {
-  width: 48%;
-  padding: 4px;
-  font-size: 16px;
-  padding: 7.5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 5px;
-}
-
-.size-bath select:focus {
-  outline: none;
-  border: blueviolet solid 2px;
-}
-
-.button-wrapper {
-  width: 75%;
-}
-
-.check-price {
-  width: 35%;
-  height: 44px;
-  border-radius: 7.5px;
-  color: white;
-  background: blueviolet;
-  font-size: 16px;
-  border: none;
-}
-
-.form-heading-wrapper {
-  width: 75%;
-}
-
-.form-heading {
-  font-size: 24px;
-  font-weight: 600;
-} */
-
-
-/* ------------------------------------ */
 
 .switch-field {
     display: flex;

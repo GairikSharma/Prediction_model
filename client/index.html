@@ -2,105 +2,105 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Property Prediction</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Property Prediction</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="App">
-        <!-- navbar wrapper  -->
-        <div class="navbar-wrapper">
-            <!-- logo  -->
-            <div class="logo">Estate<span>.</span></div>
-            <!-- links  -->
-            <div class="links">
-                <span>Home</span>
-                <span>Property</span>
-                <span>Discover</span>
-                <span>Create</span>
-            </div>
-            <!-- login  -->
-            <div class="login">
-                <button>Login</button>
-            </div>
-        </div>
+  <div class="App">
+    <!-- navbar wrapper  -->
+    <div class="navbar-wrapper">
+      <!-- logo  -->
+      <div class="logo">Project<span>.</span></div>
+      <!-- GitHub button  -->
+      <button type="button" onclick="goToGitHub()" class="github">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512.000000 512.000000"
+          preserveAspectRatio="xMidYMid meet">
+          <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
+            <path
+              d="M2325 5109 c-210 -21 -465 -79 -645 -146 -123 -45 -374 -168 -470 -229 -322 -205 -619 -502 -824 -824 -63 -98 -185 -349 -231 -474 -201 -546 -203 -1179 -4 -1739 48 -136 154 -358 229 -477 205 -328 521 -643 846 -843 657 -402 1467 -486 2199 -226 161 57 405 180 545 274 385 260 683 598 880 1000 93 189 137 304 185 488 130 495 105 1050 -70 1523 -46 125 -168 376 -231 474 -258 406 -617 732 -1035 939 -251 125 -490 201 -762 242 -153 23 -474 33 -612 18z m520 -325 c487 -59 951 -288 1305 -645 305 -306 521 -712 604 -1132 98 -493 34 -979 -189 -1433 -247 -505 -665 -892 -1186 -1098 -124 -49 -163 -55 -209 -31 -59 30 -60 39 -60 434 0 388 -7 464 -53 565 -13 29 -39 69 -57 89 -18 21 -31 39 -29 41 2 2 56 13 119 25 214 38 384 99 508 182 67 45 167 144 214 213 88 128 146 299 167 494 35 330 -13 522 -195 769 -15 20 -15 28 1 95 19 83 21 244 5 328 -6 30 -20 85 -32 123 l-21 67 -56 0 c-112 0 -318 -79 -480 -184 l-71 -46 -103 25 c-302 72 -636 72 -935 0 l-97 -23 -70 43 c-172 107 -376 185 -485 185 l-56 0 -17 -47 c-51 -144 -63 -333 -32 -471 16 -67 16 -75 1 -95 -164 -222 -213 -383 -203 -652 12 -308 91 -532 247 -698 153 -163 343 -253 650 -308 63 -12 117 -23 119 -25 3 -2 -7 -17 -22 -32 -37 -39 -85 -137 -99 -205 -14 -68 -24 -75 -135 -102 -111 -27 -239 -18 -323 22 -87 41 -137 87 -205 187 -95 141 -185 211 -305 235 -57 11 -122 3 -143 -18 -17 -17 14 -61 70 -99 113 -77 194 -178 249 -309 87 -209 227 -314 459 -343 78 -10 220 -2 292 16 l23 6 0 -208 c0 -190 -2 -212 -20 -241 -26 -43 -84 -61 -146 -45 -75 20 -288 116 -401 181 -280 160 -557 419 -740 691 -587 874 -485 2048 241 2799 384 396 861 628 1406 684 100 11 377 5 495 -9z" />
+          </g>
+        </svg>
+        GitHub
+      </button>
+    </div>
 
-        <!-- header  -->
-        <div class="header-wrapper">
-            <div class="title">Modern Style and High Quality</div>
-            <div class="see-more-wrapper">
-                <button id="seeMore">Predict Price of any Property</button>
-            </div>
-            <div class="canvas">
-                <div class="canvas-bottom">
-                    <div class="div1">
-                        <img src="./assets/img1.png" alt="property-image" />
-                    </div>
-                    <div class="div2">
-                        <img src="./assets/img1.png" alt="property-image" />
-                    </div>
-                    <div class="div3">
-                        <img src="./assets/img1.png" alt="property-image" />
-                    </div>
-                </div>
-            </div>
+    <!-- header  -->
+    <div class="header-wrapper">
+      <div class="title">Bangalore property prediction</div>
+      <div class="see-more-wrapper">
+        <button id="seeMore">Predict Price of any Property</button>
+      </div>
+      <div class="canvas">
+        <div class="canvas-bottom">
+          <div class="div1">
+            <img src="./assets/img1.png" alt="property-image" />
+          </div>
+          <div class="div2">
+            <img src="./assets/img1.png" alt="property-image" />
+          </div>
+          <div class="div3">
+            <img src="./assets/img1.png" alt="property-image" />
+          </div>
         </div>
+      </div>
+    </div>
 
-        <div class="modal-wrapper" id="modal-wrapper">
-            <div class="modal-content" id="modal-content">
-                <div class="form-wrapper">
-                    <div class="form-heading-wrapper">
-                        <div class="form-heading-main">Enter Your Requirments</div>
-                    </div>
-                    <form class="form">
-                        <h2 class="form-heading">Area (Square Feet)</h2>
-                        <input class="area" type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
-                        <h2 class="form-heading">BHK</h2>
-                        <div class="switch-field">
-                            <input type="radio" id="radio-bhk-1" name="uiBHK" value="1" />
-                            <label for="radio-bhk-1">1</label>
-                            <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
-                            <label for="radio-bhk-2">2</label>
-                            <input type="radio" id="radio-bhk-3" name="uiBHK" value="3" />
-                            <label for="radio-bhk-3">3</label>
-                            <input type="radio" id="radio-bhk-4" name="uiBHK" value="4" />
-                            <label for="radio-bhk-4">4</label>
-                            <input type="radio" id="radio-bhk-5" name="uiBHK" value="5" />
-                            <label for="radio-bhk-5">5</label>
-                        </div>
-                        <h2 class="form-heading">Bath</h2>
-                        <div class="switch-field">
-                            <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1" />
-                            <label for="radio-bath-1">1</label>
-                            <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
-                            <label for="radio-bath-2">2</label>
-                            <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3" />
-                            <label for="radio-bath-3">3</label>
-                            <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4" />
-                            <label for="radio-bath-4">4</label>
-                            <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5" />
-                            <label for="radio-bath-5">5</label>
-                        </div>
-                        <h2 class="form-heading">Location</h2>
-                        <div>
-                            <select class="location" name="" id="uiLocations">
-                        <option value="" disabled="disabled" selected="selected">Choose a Location</option>
-                            <option>Electronic City</option>
-                            <option>Rajaji Nagar</option>
-                      </select>
-                        </div>
-                        <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
-                        <div id="uiEstimatedPrice" class="result">
-                            <h2></h2>
-                        </div>
-                    </form>
-                </div>
+    <div class="modal-wrapper" id="modal-wrapper">
+      <div class="modal-content" id="modal-content">
+        <div class="form-wrapper">
+          <div class="form-heading-wrapper">
+            <div class="form-heading-main">Enter Your Requirments</div>
+          </div>
+          <form class="form">
+            <h2 class="form-heading">Area (Square Feet)</h2>
+            <input class="area" type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+            <h2 class="form-heading">BHK</h2>
+            <div class="switch-field">
+              <input type="radio" id="radio-bhk-1" name="uiBHK" value="1" />
+              <label for="radio-bhk-1">1</label>
+              <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked />
+              <label for="radio-bhk-2">2</label>
+              <input type="radio" id="radio-bhk-3" name="uiBHK" value="3" />
+              <label for="radio-bhk-3">3</label>
+              <input type="radio" id="radio-bhk-4" name="uiBHK" value="4" />
+              <label for="radio-bhk-4">4</label>
+              <input type="radio" id="radio-bhk-5" name="uiBHK" value="5" />
+              <label for="radio-bhk-5">5</label>
             </div>
+            <h2 class="form-heading">Bath</h2>
+            <div class="switch-field">
+              <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1" />
+              <label for="radio-bath-1">1</label>
+              <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked />
+              <label for="radio-bath-2">2</label>
+              <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3" />
+              <label for="radio-bath-3">3</label>
+              <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4" />
+              <label for="radio-bath-4">4</label>
+              <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5" />
+              <label for="radio-bath-5">5</label>
+            </div>
+            <h2 class="form-heading">Location</h2>
+            <div>
+              <select class="location" name="" id="uiLocations">
+                <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                <option>Electronic City</option>
+                <option>Rajaji Nagar</option>
+              </select>
+            </div>
+            <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+            <div id="uiEstimatedPrice" class="result">
+              <h2></h2>
+            </div>
+          </form>
         </div>
+      </div>
+    </div>
 </body>
 <script src="index.js"></script>
 
