@@ -21,6 +21,9 @@ The dataset used for training and testing the model is included in the 'model' f
 ![image](https://github.com/GairikSharma/Prediction_model/blob/main/pred_1.jpeg)
 <br>
 
+##
+<br>
+
 ![image](https://github.com/GairikSharma/Prediction_model/blob/main/pred_2.jpeg)
 <br>
 <br>
