@@ -19,7 +19,12 @@ The dataset used for training and testing the model is included in the 'model' f
 
 # UI Preview
 ![image](https://github.com/GairikSharma/Prediction_model/blob/main/pred_1.jpeg)
+<br>
+
 ![image](https://github.com/GairikSharma/Prediction_model/blob/main/pred_2.jpeg)
+<br>
+<br>
+
 ## Contributors
 I. [Bhupendra Yogi](https://www.github.com/laughing-nerd) 
 <br>
