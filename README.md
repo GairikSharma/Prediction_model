@@ -29,17 +29,17 @@ The dataset used for training and testing the model is included in the 'model' f
 <br>
 
 ## Contributors
-I. [Bhupendra Yogi](https://www.github.com/laughing-nerd) 
+I. [Bhupendra Paul](https://www.github.com/laughing-nerd) 
 <br>
-II. [Sampriti Banerjee](https://www.github.com/sampritibanerjee)
+II. [Bhupendra Banerjee](https://www.github.com/sampritibanerjee)
 <br>
-III. [Gairik Sharma](https://www.github.com/GairikSharma)
+III. [Bhupendra Sharma](https://www.github.com/GairikSharma)
 <br>
-IV. [Arjun Kumar Ghosh](https://www.github.com/ArjunGhosh561)
+IV. [Bhupendra Kumar Ghosh](https://www.github.com/ArjunGhosh561)
 <br>
-V. [Soumyadeep Das](https://www.github.com/Soumya-glitch-charlie)
+V. [Bhupendra Das](https://www.github.com/Soumya-glitch-charlie)
 <br>
-VI. [Sayantan Barman Roy](https://www.github.com/Sayantan63)
+VI. [Bhupendra Barman Roy](https://www.github.com/Sayantan63)
 <br>
 
 <br>
